@@ -1,0 +1,10 @@
+th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+.task-cell{
+    width: 35%;
+}
+.date-cell,.time-cell, .priority-cell{
+    width: 15%;
+}

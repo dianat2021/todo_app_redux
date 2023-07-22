@@ -1,0 +1,51 @@
+.form-main-container {
+  flex-basis: 30%;
+  height: 100vh;
+  background-color: #b9d9eb;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Marcellus", serif;
+  font-weight: bold;
+}
+.form-input-container {
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  /* background-color: brown; */
+}
+.input-field {
+  width: 90%;
+  height: 2rem;
+  margin: 0 auto;
+  padding: 0 0.2rem;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #1d2951;
+}
+.input-field:focus {
+  border: 2px solid #00693e;
+}
+.submit-task-btn {
+  margin-top: 2rem;
+  height: 3rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1d2951;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #1d2951;
+  transition: 0.3s;
+}
+.submit-task-btn:hover {
+  box-shadow: 0px 0px 10px 0px #1d2951;
+  border-color: #1d2951;
+  color: #1d2951;
+}
+.input-error {
+  color: #960018;
+  font-size: 0.8rem;
+}

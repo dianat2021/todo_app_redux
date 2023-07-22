@@ -1,0 +1,162 @@
+body{
+  background-color: #72a0c1;
+}
+.main-container{
+    flex-basis: 70%;
+    padding: 2rem 1rem 0 1rem
+}
+
+.table-header{
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #b9d9eb;
+}
+
+.task-cell-header{
+    flex-basis: 35%;
+}
+
+.date-cell-header,.time-cell-header, .priority-cell-header{
+    flex-basis: 15%;
+}
+.controls-cell-header{
+  flex-basis: 20%;
+}
+
+.task-cell-header,.date-cell-header,.time-cell-header, .priority-cell-header{
+  border-right: 2px solid gray;
+}
+/* ---------------------------------------------------------------------------- */
+.task-row{
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  background-color: #f0f8ff;
+}
+
+.task-cell{
+  flex-basis: 35%;
+}
+
+.date-cell,.time-cell,.priority-cell{
+  flex-basis: 15%;
+}
+
+.controls-cell{
+  flex-basis: 20%;
+}
+
+.task-cell,.date-cell,.time-cell, .priority-cell{
+  border-right: 2px solid gray;
+}
+.date-cell,.time-cell, .priority-cell{
+  text-align: center;
+}
+
+.completed{
+    text-decoration: line-through;
+    background-color: #9ab973;
+}
+
+
+.user-task{
+  text-align: left;
+}
+.task-cell{
+  text-align: left;
+  padding: 0 0.2rem;
+}
+.controls-cell{
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 0.1px;
+}
+.controls-cell button{
+  width: 25%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+.modals-backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 2s;
+}
+.delete-modal{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b9d9eb;
+  width: 60%;
+  height: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+
+.close-delete-modal{
+  flex-basis: 20%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0 0.3rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.close-button{
+  cursor: pointer;
+}
+.delete-modal-message{
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-modal-buttons{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.delete-modal-buttons button{
+  width: 12rem;
+  height: 3rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1d2951;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #1d2951;
+  transition: 0.3s;
+}
+.delete-modal-buttons button:hover{
+  box-shadow: 0px 0px 10px 0px #1d2951;
+  border-color: #1d2951;
+  color: #1d2951;
+}
